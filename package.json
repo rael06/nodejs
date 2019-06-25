@@ -2,9 +2,10 @@
   "name": "nodejs",
   "version": "1.0.0",
   "description": "",
-  "main": "s01e01.js",
+  "main": "exo/exo.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
   },
   "repository": {
     "type": "git",
@@ -17,8 +18,10 @@
   },
   "homepage": "https://github.com/rael06/nodejs#readme",
   "dependencies": {
+    "body-parser": "^1.19.0",
     "ejs": "^2.6.2",
     "express": "^4.17.1",
+    "nodemon": "^1.19.1",
     "pokedex-promise-v2": "^3.2.0"
   }
 }

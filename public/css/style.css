@@ -1,0 +1,31 @@
+* {
+	margin: 0;
+	box-sizing: border-box;
+}
+
+section {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+table {
+	width: 80%;
+}
+
+img {
+	width: 300px;
+	height: 300px;
+}
+
+tr {
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+}
+
+td, th {
+	border: 1px solid lightblue;
+	text-align: center;
+	padding: 5px 10px;
+}

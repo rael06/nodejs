@@ -7,6 +7,10 @@
 	<title>Document</title>
 </head>
 <body>
-	<h1>Hello 1</h1>	
+	<% data.results.forEach(element => { %>
+		<p><a href="/details/<%= element.name %>" class="pokemonLink" id="<%= element.name %>"><%= element.name %></a></p>
+	<% }) %>
+
+	<% include common/footer %>
 </body>
 </html>

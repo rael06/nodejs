@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<% include common/head %>
+		<title>Document</title>
+	</head>
+
+	<body>
+		<% include common/header %>
+		<section>
+			<h1><%= data.name %></h1>
+			<img src="<%= data.sprites.front_default %>" alt="pokemon">
+			<table>
+				<thead>
+					<tr>
+						<% data.stats.forEach(element => { %>
+							<th><%= element.stat.name %></th>
+						<% }); %>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<% data.stats.forEach(element => { %>
+							<td><%= JSON.stringify(element.base_stat) %></td>
+						<% }) %>
+					</tr>
+				</tbody>
+			</table>
+			<% data.types.forEach(element => { %>
+				<p>Type : <%= element.type.name %></p>
+			<% }) %>
+		</section>
+		<% include common/footer %>
+	</body>
+
+</html>
